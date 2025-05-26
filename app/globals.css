@@ -14,8 +14,114 @@
   }
 }
 
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-Black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  src: url('/public/Font/TTTravels-BlackItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'TT Travels', sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-arrow,
+.episode-prev,
+.episode-next,
+.next-arrow,
+.location-prev,
+.location-next {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.prev-arrow::after,
+.episode-prev::after,
+.episode-next::after,
+.next-arrow::after,
+.location-prev::after,
+.location-next::after {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.episodes {
+  scrollbar-color: #15bffd #393e4f;
+
 }
